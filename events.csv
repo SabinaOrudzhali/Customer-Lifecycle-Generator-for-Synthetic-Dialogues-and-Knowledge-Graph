@@ -1,0 +1,244 @@
+﻿event_id,client_id,event_order,previous_event_id,event_date,event_month,scenario_name,lifecycle_stage,event_type,product,topic,channel,sentiment,status,satisfaction_score,is_complaint,is_purchase,is_repeat,resolution_time_days
+event_27771ad1ae68,C001,1,,2024-12-11,2024-12,problematic_many_complaints,использование продукта,usage,Дебетовая карта,комиссия,email,neutral,completed,4,False,False,False,1.0
+event_23cb234e9bed,C001,2,event_27771ad1ae68,2025-01-18,2025-01,problematic_many_complaints,жалоба,complaint,Страхование,жалоба на обслуживание,офис,negative,escalated,2,True,False,True,
+event_8c29135abac0,C001,3,event_23cb234e9bed,2025-02-24,2025-02,problematic_many_complaints,эскалация,escalation,Страхование,блокировка карты,офис,negative,escalated,3,True,False,True,
+event_65d9b172fbc2,C001,4,event_8c29135abac0,2025-04-01,2025-04,problematic_many_complaints,решение проблемы,problem_resolved,Страхование,техническая ошибка,сайт,positive,resolved,4,False,False,True,3.0
+event_13fa3c53a9e9,C001,5,event_65d9b172fbc2,2025-04-20,2025-04,problematic_many_complaints,жалоба,complaint,Страхование,ошибка в приложении,сайт,negative,escalated,3,True,False,True,
+event_9574cad4294c,C001,6,event_13fa3c53a9e9,2025-05-15,2025-05,problematic_many_complaints,вопрос в поддержку,support_question,Страхование,техническая ошибка,мобильное приложение,positive,resolved,5,False,False,True,1.0
+event_083e4c73eb20,C001,7,event_9574cad4294c,2025-05-30,2025-05,problematic_many_complaints,жалоба,complaint,Страхование,жалоба на обслуживание,телефон,negative,in_progress,3,True,False,True,
+event_27f9b4ebb9c8,C001,8,event_083e4c73eb20,2025-06-27,2025-06,problematic_many_complaints,эскалация,escalation,Страхование,техническая ошибка,сайт,negative,escalated,2,True,False,True,
+event_0d8e4d9e5b33,C002,1,,2024-11-11,2024-11,complaint_resolved_return,использование продукта,usage,Страхование,комиссия,чат,positive,completed,5,False,False,False,2.0
+event_33213a837f9a,C002,2,event_0d8e4d9e5b33,2024-11-25,2024-11,complaint_resolved_return,жалоба,complaint,Накопительный счет,блокировка карты,чат,negative,in_progress,3,True,False,True,
+event_1d9133db1e58,C002,3,event_33213a837f9a,2024-12-30,2024-12,complaint_resolved_return,эскалация,escalation,Потребительский кредит,блокировка карты,чат,negative,escalated,3,True,False,True,
+event_240a45d6b2a1,C002,4,event_1d9133db1e58,2025-01-19,2025-01,complaint_resolved_return,решение проблемы,problem_resolved,Накопительный счет,возврат средств,чат,positive,resolved,4,False,False,True,5.0
+event_7dce7853327a,C002,5,event_240a45d6b2a1,2025-01-26,2025-01,complaint_resolved_return,удержание,retention,Накопительный счет,консультация по тарифам,email,positive,retained,4,False,False,True,2.0
+event_b1f221297bf6,C003,1,,2024-08-19,2024-08,complaint_and_leave,использование продукта,usage,Кредитная карта,изменение персональных данных,сайт,neutral,completed,3,False,False,False,3.0
+event_8d7423c933c5,C003,2,event_b1f221297bf6,2024-09-04,2024-09,complaint_and_leave,жалоба,complaint,Накопительный счет,комиссия,чат,neutral,escalated,1,True,False,True,
+event_76c822a306f4,C003,3,event_8d7423c933c5,2024-10-09,2024-10,complaint_and_leave,уход клиента,churn,Кредитная карта,комиссия,чат,negative,lost,2,False,False,True,
+event_1c0c1f40b7e7,C004,1,,2024-11-21,2024-11,one_touch,знакомство,introduction,Ипотека,консультация по тарифам,чат,neutral,completed,5,False,False,False,2.0
+event_7c2d07c505cf,C005,1,,2024-09-28,2024-09,loyal_multi_product,знакомство,introduction,Накопительный счет,оформление продукта,чат,neutral,completed,3,False,False,False,2.0
+event_e29857fe2fc9,C005,2,event_7c2d07c505cf,2024-10-16,2024-10,loyal_multi_product,интерес к продукту,product_interest,Страхование,повышение лимита,email,neutral,completed,3,False,False,True,3.0
+event_793eb5cc3758,C005,3,event_e29857fe2fc9,2024-10-28,2024-10,loyal_multi_product,покупка,purchase,Инвестиционный счет,условия продукта,чат,positive,completed,5,False,True,True,2.0
+event_a05b43d094d4,C005,4,event_793eb5cc3758,2024-11-25,2024-11,loyal_multi_product,использование продукта,usage,Инвестиционный счет,условия продукта,чат,neutral,completed,4,False,False,True,0.0
+event_32f0087e4868,C005,5,event_a05b43d094d4,2024-12-22,2024-12,loyal_multi_product,повторная покупка,repeat_purchase,Ипотека,оформление продукта,мобильное приложение,positive,completed,5,False,True,True,2.0
+event_a90922b8c751,C006,1,,2024-11-14,2024-11,complaint_and_leave,жалоба,complaint,Кредитная карта,блокировка карты,телефон,negative,in_progress,3,True,False,False,
+event_cf43f0366792,C006,2,event_a90922b8c751,2024-12-08,2024-12,complaint_and_leave,уход клиента,churn,Кредитная карта,жалоба на обслуживание,телефон,negative,lost,2,False,False,True,
+event_a12be4513720,C007,1,,2025-01-09,2025-01,complaint_and_leave,знакомство,introduction,Кредитная карта,оформление продукта,чат,positive,completed,5,False,False,False,0.0
+event_0a092504170b,C007,2,event_a12be4513720,2025-01-21,2025-01,complaint_and_leave,покупка,purchase,Кредитная карта,оформление продукта,сайт,positive,completed,4,False,True,True,2.0
+event_ca232430e006,C007,3,event_0a092504170b,2025-02-15,2025-02,complaint_and_leave,использование продукта,usage,Кредитная карта,условия продукта,мобильное приложение,neutral,completed,4,False,False,True,1.0
+event_438d7c6d946a,C007,4,event_ca232430e006,2025-03-18,2025-03,complaint_and_leave,жалоба,complaint,Страхование,жалоба на обслуживание,чат,negative,in_progress,2,True,False,True,
+event_e45f9057a3b8,C007,5,event_438d7c6d946a,2025-03-25,2025-03,complaint_and_leave,эскалация,escalation,Кредитная карта,блокировка карты,чат,negative,escalated,2,True,False,True,
+event_7d25c29698b6,C007,6,event_e45f9057a3b8,2025-04-23,2025-04,complaint_and_leave,уход клиента,churn,Кредитная карта,жалоба на обслуживание,мобильное приложение,negative,lost,1,False,False,True,
+event_9b9f167c9e7e,C008,1,,2024-12-25,2024-12,complaint_and_leave,знакомство,introduction,Дебетовая карта,условия продукта,email,positive,completed,4,False,False,False,3.0
+event_004fc7ecd9a4,C008,2,event_9b9f167c9e7e,2025-02-01,2025-02,complaint_and_leave,покупка,purchase,Кредитная карта,оформление продукта,email,positive,completed,5,False,True,True,0.0
+event_c69e5ebe6d36,C008,3,event_004fc7ecd9a4,2025-03-13,2025-03,complaint_and_leave,использование продукта,usage,Дебетовая карта,изменение персональных данных,мобильное приложение,positive,completed,5,False,False,True,1.0
+event_993373bca03d,C008,4,event_c69e5ebe6d36,2025-04-05,2025-04,complaint_and_leave,жалоба,complaint,Кредитная карта,возврат средств,телефон,negative,resolved,2,True,False,True,11.0
+event_a8f7a0d3ddb7,C008,5,event_993373bca03d,2025-05-13,2025-05,complaint_and_leave,уход клиента,churn,Дебетовая карта,комиссия,email,neutral,lost,2,False,False,True,
+event_fe437fd3e3d4,C009,1,,2024-11-20,2024-11,complaint_resolved_return,использование продукта,usage,Накопительный счет,изменение персональных данных,сайт,neutral,completed,3,False,False,False,3.0
+event_bc755d97b28a,C009,2,event_fe437fd3e3d4,2024-11-28,2024-11,complaint_resolved_return,жалоба,complaint,Ипотека,ошибка в приложении,чат,negative,in_progress,2,True,False,True,
+event_afcbbd08ccc2,C009,3,event_bc755d97b28a,2025-01-10,2025-01,complaint_resolved_return,эскалация,escalation,Ипотека,возврат средств,email,neutral,escalated,3,True,False,True,
+event_681a0f4b121f,C009,4,event_afcbbd08ccc2,2025-02-17,2025-02,complaint_resolved_return,решение проблемы,problem_resolved,Кредитная карта,техническая ошибка,email,positive,resolved,5,False,False,True,4.0
+event_ec4b7dab592d,C009,5,event_681a0f4b121f,2025-03-25,2025-03,complaint_resolved_return,удержание,retention,Страхование,повышение лимита,чат,positive,retained,4,False,False,True,2.0
+event_1b7ae55a4026,C009,6,event_ec4b7dab592d,2025-04-28,2025-04,complaint_resolved_return,повторная покупка,repeat_purchase,Потребительский кредит,оформление продукта,email,neutral,completed,4,False,True,True,1.0
+event_6517e3a01960,C010,1,,2024-09-30,2024-09,happy_purchase,знакомство,introduction,Инвестиционный счет,оформление продукта,мобильное приложение,positive,completed,5,False,False,False,2.0
+event_d768c0c7f4ab,C010,2,event_6517e3a01960,2024-10-24,2024-10,happy_purchase,интерес к продукту,product_interest,Инвестиционный счет,консультация по тарифам,чат,neutral,completed,4,False,False,True,1.0
+event_8b188eea9d21,C010,3,event_d768c0c7f4ab,2024-11-14,2024-11,happy_purchase,консультация,consultation,Инвестиционный счет,условия продукта,офис,neutral,completed,5,False,False,True,1.0
+event_d71ea6919cd3,C010,4,event_8b188eea9d21,2024-11-23,2024-11,happy_purchase,покупка,purchase,Потребительский кредит,условия продукта,офис,positive,completed,5,False,True,True,2.0
+event_25b4a89b3bef,C010,5,event_d71ea6919cd3,2024-12-18,2024-12,happy_purchase,использование продукта,usage,Потребительский кредит,комиссия,чат,positive,completed,5,False,False,True,2.0
+event_0f5db095f94f,C010,6,event_25b4a89b3bef,2025-01-04,2025-01,happy_purchase,вопрос в поддержку,support_question,Потребительский кредит,техническая ошибка,офис,neutral,in_progress,4,False,False,True,
+event_4f871ce9f1bd,C010,7,event_0f5db095f94f,2025-01-20,2025-01,happy_purchase,решение проблемы,problem_resolved,Инвестиционный счет,жалоба на обслуживание,офис,negative,resolved,5,False,False,True,1.0
+event_31297d57fdf6,C011,1,,2024-10-07,2024-10,repeat_purchase,знакомство,introduction,Ипотека,консультация по тарифам,чат,neutral,completed,5,False,False,False,2.0
+event_b4e5147fcef4,C011,2,event_31297d57fdf6,2024-11-06,2024-11,repeat_purchase,интерес к продукту,product_interest,Страхование,повышение лимита,мобильное приложение,positive,completed,5,False,False,True,2.0
+event_2ec6a02eb4ee,C011,3,event_b4e5147fcef4,2024-11-17,2024-11,repeat_purchase,покупка,purchase,Накопительный счет,условия продукта,мобильное приложение,neutral,completed,5,False,True,True,2.0
+event_bf8e68242dbf,C011,4,event_2ec6a02eb4ee,2024-12-02,2024-12,repeat_purchase,использование продукта,usage,Страхование,условия продукта,мобильное приложение,negative,completed,3,False,False,True,0.0
+event_b5990ddd8e29,C011,5,event_bf8e68242dbf,2025-01-02,2025-01,repeat_purchase,консультация,consultation,Страхование,изменение персональных данных,мобильное приложение,neutral,completed,5,False,False,True,3.0
+event_9c0778bd1c34,C011,6,event_b5990ddd8e29,2025-02-04,2025-02,repeat_purchase,повторная покупка,repeat_purchase,Дебетовая карта,оформление продукта,email,positive,completed,5,False,True,True,0.0
+event_a172b5c9ad5c,C011,7,event_9c0778bd1c34,2025-02-24,2025-02,repeat_purchase,использование продукта,usage,Страхование,условия продукта,чат,positive,completed,5,False,False,True,2.0
+event_dee79f911a48,C011,8,event_a172b5c9ad5c,2025-03-06,2025-03,repeat_purchase,повторная покупка,repeat_purchase,Инвестиционный счет,оформление продукта,мобильное приложение,positive,completed,4,False,True,True,1.0
+event_01e204b94ee1,C011,9,event_dee79f911a48,2025-04-20,2025-04,repeat_purchase,повторная покупка,repeat_purchase,Кредитная карта,повторная покупка,мобильное приложение,neutral,completed,4,False,True,True,0.0
+event_a461a9c10bb9,C011,10,event_01e204b94ee1,2025-05-01,2025-05,repeat_purchase,повторная покупка,repeat_purchase,Потребительский кредит,условия продукта,мобильное приложение,positive,completed,4,False,True,True,1.0
+event_28f0d477a5e4,C011,11,event_a461a9c10bb9,2025-05-25,2025-05,repeat_purchase,повторная покупка,repeat_purchase,Ипотека,повторная покупка,мобильное приложение,positive,completed,4,False,True,True,0.0
+event_731191183003,C012,1,,2024-09-03,2024-09,complaint_resolved_return,использование продукта,usage,Дебетовая карта,изменение персональных данных,офис,positive,completed,3,False,False,False,2.0
+event_3163dbb1dd58,C012,2,event_731191183003,2024-10-06,2024-10,complaint_resolved_return,жалоба,complaint,Дебетовая карта,возврат средств,мобильное приложение,negative,escalated,2,True,False,True,
+event_a20ffd583ad5,C012,3,event_3163dbb1dd58,2024-11-14,2024-11,complaint_resolved_return,эскалация,escalation,Дебетовая карта,техническая ошибка,мобильное приложение,negative,escalated,1,True,False,True,
+event_4ca74c4f8d6f,C012,4,event_a20ffd583ad5,2024-12-16,2024-12,complaint_resolved_return,решение проблемы,problem_resolved,Дебетовая карта,жалоба на обслуживание,мобильное приложение,neutral,resolved,5,False,False,True,1.0
+event_92ec8a803166,C012,5,event_4ca74c4f8d6f,2025-01-30,2025-01,complaint_resolved_return,удержание,retention,Дебетовая карта,консультация по тарифам,email,neutral,retained,5,False,False,True,4.0
+event_4e947e9a6033,C012,6,event_92ec8a803166,2025-03-02,2025-03,complaint_resolved_return,повторная покупка,repeat_purchase,Накопительный счет,условия продукта,офис,positive,completed,5,False,True,True,0.0
+event_2f01b3a1fc29,C012,7,event_4e947e9a6033,2025-04-13,2025-04,complaint_resolved_return,вопрос в поддержку,support_question,Дебетовая карта,изменение персональных данных,телефон,neutral,resolved,3,False,False,True,7.0
+event_f4e9f24b357b,C013,1,,2024-11-15,2024-11,one_touch,знакомство,introduction,Потребительский кредит,консультация по тарифам,сайт,positive,completed,4,False,False,False,2.0
+event_1a2b9226c415,C014,1,,2024-08-18,2024-08,loyal_multi_product,знакомство,introduction,Инвестиционный счет,условия продукта,сайт,neutral,completed,5,False,False,False,2.0
+event_880a377966a8,C014,2,event_1a2b9226c415,2024-10-01,2024-10,loyal_multi_product,интерес к продукту,product_interest,Инвестиционный счет,повышение лимита,email,neutral,completed,4,False,False,True,2.0
+event_cb8713269890,C014,3,event_880a377966a8,2024-10-11,2024-10,loyal_multi_product,покупка,purchase,Потребительский кредит,условия продукта,email,positive,completed,4,False,True,True,0.0
+event_724d42d1789c,C014,4,event_cb8713269890,2024-11-01,2024-11,loyal_multi_product,использование продукта,usage,Потребительский кредит,изменение персональных данных,сайт,positive,completed,4,False,False,True,1.0
+event_aaa83bff47f9,C014,5,event_724d42d1789c,2024-12-16,2024-12,loyal_multi_product,повторная покупка,repeat_purchase,Ипотека,повторная покупка,сайт,positive,completed,5,False,True,True,1.0
+event_7cf7a4a696ab,C014,6,event_aaa83bff47f9,2025-01-03,2025-01,loyal_multi_product,использование продукта,usage,Инвестиционный счет,изменение персональных данных,сайт,positive,completed,3,False,False,True,0.0
+event_f01ad024543e,C015,1,,2024-11-05,2024-11,problematic_many_complaints,использование продукта,usage,Накопительный счет,комиссия,сайт,positive,completed,5,False,False,False,2.0
+event_e854a4fa7f5b,C015,2,event_f01ad024543e,2024-11-15,2024-11,problematic_many_complaints,жалоба,complaint,Дебетовая карта,просрочка платежа,телефон,neutral,escalated,2,True,False,True,
+event_780c95fa24f1,C015,3,event_e854a4fa7f5b,2024-12-18,2024-12,problematic_many_complaints,эскалация,escalation,Дебетовая карта,техническая ошибка,email,negative,escalated,2,True,False,True,
+event_d4d88008ca4d,C015,4,event_780c95fa24f1,2025-01-27,2025-01,problematic_many_complaints,решение проблемы,problem_resolved,Дебетовая карта,техническая ошибка,сайт,positive,resolved,4,False,False,True,1.0
+event_be602d892628,C015,5,event_d4d88008ca4d,2025-02-16,2025-02,problematic_many_complaints,жалоба,complaint,Накопительный счет,ошибка в приложении,сайт,negative,escalated,1,True,False,True,
+event_315214396d17,C015,6,event_be602d892628,2025-03-03,2025-03,problematic_many_complaints,вопрос в поддержку,support_question,Дебетовая карта,техническая ошибка,сайт,positive,resolved,5,False,False,True,1.0
+event_c5ee7537bdf4,C015,7,event_315214396d17,2025-03-30,2025-03,problematic_many_complaints,жалоба,complaint,Накопительный счет,просрочка платежа,мобильное приложение,negative,in_progress,2,True,False,True,
+event_c66fbad9f077,C015,8,event_c5ee7537bdf4,2025-04-16,2025-04,problematic_many_complaints,эскалация,escalation,Накопительный счет,техническая ошибка,сайт,neutral,escalated,1,True,False,True,
+event_37a69ac0b0a6,C015,9,event_c66fbad9f077,2025-05-30,2025-05,problematic_many_complaints,закрытие продукта,product_closure,Дебетовая карта,комиссия,сайт,negative,closed,4,False,False,True,2.0
+event_52cf5a4db90a,C015,10,event_37a69ac0b0a6,2025-06-16,2025-06,problematic_many_complaints,уход клиента,churn,Накопительный счет,комиссия,сайт,negative,lost,2,False,False,True,
+event_9ac0a2c77c0a,C015,11,event_52cf5a4db90a,2025-07-08,2025-07,problematic_many_complaints,решение проблемы,problem_resolved,Накопительный счет,техническая ошибка,сайт,positive,resolved,4,False,False,True,1.0
+event_7d4967c62c86,C015,12,event_9ac0a2c77c0a,2025-08-13,2025-08,problematic_many_complaints,жалоба,complaint,Накопительный счет,просрочка платежа,чат,negative,escalated,3,True,False,True,
+event_ba3263fb68e2,C016,1,,2025-01-08,2025-01,complaint_and_leave,знакомство,introduction,Кредитная карта,условия продукта,сайт,neutral,completed,5,False,False,False,2.0
+event_1eec34c9d6ac,C016,2,event_ba3263fb68e2,2025-02-06,2025-02,complaint_and_leave,покупка,purchase,Накопительный счет,оформление продукта,мобильное приложение,positive,completed,5,False,True,True,0.0
+event_1cd9e5524c45,C016,3,event_1eec34c9d6ac,2025-03-03,2025-03,complaint_and_leave,использование продукта,usage,Ипотека,изменение персональных данных,сайт,neutral,completed,4,False,False,True,3.0
+event_56e64ba3dc9a,C016,4,event_1cd9e5524c45,2025-04-07,2025-04,complaint_and_leave,жалоба,complaint,Инвестиционный счет,просрочка платежа,сайт,neutral,escalated,3,True,False,True,
+event_794b9a0f37b6,C016,5,event_56e64ba3dc9a,2025-05-12,2025-05,complaint_and_leave,эскалация,escalation,Кредитная карта,жалоба на обслуживание,сайт,negative,escalated,1,True,False,True,
+event_8cdb82c9630e,C016,6,event_794b9a0f37b6,2025-06-16,2025-06,complaint_and_leave,уход клиента,churn,Инвестиционный счет,комиссия,офис,negative,lost,2,False,False,True,
+event_293fd9715cf6,C017,1,,2024-11-08,2024-11,long_lifecycle,знакомство,introduction,Дебетовая карта,оформление продукта,мобильное приложение,neutral,completed,5,False,False,False,2.0
+event_1a168de29bae,C017,2,event_293fd9715cf6,2024-11-21,2024-11,long_lifecycle,интерес к продукту,product_interest,Ипотека,повышение лимита,чат,positive,completed,5,False,False,True,1.0
+event_a3ab67050ec8,C017,3,event_1a168de29bae,2025-01-04,2025-01,long_lifecycle,консультация,consultation,Потребительский кредит,условия продукта,чат,negative,completed,5,False,False,True,3.0
+event_604dc9f58779,C017,4,event_a3ab67050ec8,2025-01-30,2025-01,long_lifecycle,покупка,purchase,Страхование,условия продукта,чат,positive,completed,5,False,True,True,0.0
+event_bc2d0529cad7,C017,5,event_604dc9f58779,2025-03-05,2025-03,long_lifecycle,использование продукта,usage,Дебетовая карта,условия продукта,чат,positive,completed,3,False,False,True,2.0
+event_5c5c58e9eb46,C017,6,event_bc2d0529cad7,2025-03-26,2025-03,long_lifecycle,вопрос в поддержку,support_question,Кредитная карта,ошибка в приложении,чат,neutral,resolved,3,False,False,True,5.0
+event_645b8f0d7ac7,C017,7,event_5c5c58e9eb46,2025-04-23,2025-04,long_lifecycle,решение проблемы,problem_resolved,Инвестиционный счет,техническая ошибка,чат,positive,resolved,4,False,False,True,2.0
+event_3143fb525d29,C017,8,event_645b8f0d7ac7,2025-05-28,2025-05,long_lifecycle,удержание,retention,Страхование,повышение лимита,офис,neutral,retained,4,False,False,True,4.0
+event_6e0f45cec684,C017,9,event_3143fb525d29,2025-06-18,2025-06,long_lifecycle,повторная покупка,repeat_purchase,Накопительный счет,повторная покупка,офис,positive,completed,5,False,True,True,0.0
+event_37ab80f3e370,C017,10,event_6e0f45cec684,2025-07-24,2025-07,long_lifecycle,использование продукта,usage,Страхование,изменение персональных данных,чат,neutral,completed,3,False,False,True,1.0
+event_c11e16d4ef6a,C017,11,event_37ab80f3e370,2025-08-16,2025-08,long_lifecycle,консультация,consultation,Страхование,условия продукта,чат,neutral,completed,3,False,False,True,0.0
+event_d4e1bac7722d,C017,12,event_c11e16d4ef6a,2025-09-02,2025-09,long_lifecycle,повторная покупка,repeat_purchase,Ипотека,оформление продукта,чат,neutral,completed,4,False,True,True,1.0
+event_e6cce9adca42,C018,1,,2024-11-24,2024-11,one_touch,знакомство,introduction,Дебетовая карта,консультация по тарифам,сайт,positive,completed,5,False,False,False,2.0
+event_673480c6a584,C019,1,,2024-08-21,2024-08,complaint_and_leave,жалоба,complaint,Ипотека,ошибка в приложении,чат,negative,escalated,3,True,False,False,
+event_852b55ae8ff6,C019,2,event_673480c6a584,2024-08-30,2024-08,complaint_and_leave,уход клиента,churn,Ипотека,комиссия,чат,negative,lost,2,False,False,True,
+event_7cf6fe1f85ab,C020,1,,2024-08-21,2024-08,complaint_resolved_return,использование продукта,usage,Дебетовая карта,комиссия,мобильное приложение,neutral,completed,5,False,False,False,3.0
+event_9a47a4a80e64,C020,2,event_7cf6fe1f85ab,2024-09-12,2024-09,complaint_resolved_return,жалоба,complaint,Дебетовая карта,комиссия,мобильное приложение,negative,escalated,3,True,False,True,
+event_bd0c35bb7dc6,C020,3,event_9a47a4a80e64,2024-10-27,2024-10,complaint_resolved_return,эскалация,escalation,Дебетовая карта,возврат средств,чат,negative,escalated,1,True,False,True,
+event_c9fd547bd8c3,C020,4,event_bd0c35bb7dc6,2024-11-18,2024-11,complaint_resolved_return,решение проблемы,problem_resolved,Дебетовая карта,возврат средств,телефон,positive,resolved,5,False,False,True,1.0
+event_569ef04a1039,C020,5,event_c9fd547bd8c3,2024-12-19,2024-12,complaint_resolved_return,удержание,retention,Дебетовая карта,повышение лимита,телефон,positive,retained,4,False,False,True,2.0
+event_de84b1891874,C020,6,event_569ef04a1039,2025-01-17,2025-01,complaint_resolved_return,повторная покупка,repeat_purchase,Кредитная карта,оформление продукта,email,positive,completed,4,False,True,True,2.0
+event_fac32dcf828f,C021,1,,2024-09-04,2024-09,complaint_and_leave,жалоба,complaint,Ипотека,просрочка платежа,email,neutral,escalated,3,True,False,False,
+event_93300e115221,C021,2,event_fac32dcf828f,2024-09-22,2024-09,complaint_and_leave,уход клиента,churn,Ипотека,комиссия,мобильное приложение,negative,lost,2,False,False,True,
+event_1e79f3245984,C022,1,,2024-09-21,2024-09,complaint_and_leave,использование продукта,usage,Инвестиционный счет,комиссия,чат,positive,completed,4,False,False,False,3.0
+event_eaa1eb95ebd7,C022,2,event_1e79f3245984,2024-10-14,2024-10,complaint_and_leave,жалоба,complaint,Инвестиционный счет,ошибка в приложении,чат,negative,resolved,1,True,False,True,8.0
+event_4e7ae3596ec3,C022,3,event_eaa1eb95ebd7,2024-11-13,2024-11,complaint_and_leave,уход клиента,churn,Дебетовая карта,комиссия,чат,negative,lost,2,False,False,True,
+event_005dbb194333,C023,1,,2024-12-06,2024-12,happy_purchase,знакомство,introduction,Потребительский кредит,оформление продукта,мобильное приложение,positive,completed,3,False,False,False,3.0
+event_a122f25f71aa,C023,2,event_005dbb194333,2025-01-20,2025-01,happy_purchase,интерес к продукту,product_interest,Кредитная карта,консультация по тарифам,офис,positive,completed,3,False,False,True,0.0
+event_5b7c198b3863,C023,3,event_a122f25f71aa,2025-02-15,2025-02,happy_purchase,консультация,consultation,Ипотека,консультация по тарифам,мобильное приложение,neutral,completed,4,False,False,True,3.0
+event_4a37e700a4c3,C024,1,,2025-01-05,2025-01,happy_purchase,знакомство,introduction,Потребительский кредит,оформление продукта,email,negative,completed,3,False,False,False,0.0
+event_2f93c12b9343,C024,2,event_4a37e700a4c3,2025-02-04,2025-02,happy_purchase,интерес к продукту,product_interest,Страхование,консультация по тарифам,чат,positive,completed,3,False,False,True,1.0
+event_8f387c590f91,C025,1,,2024-08-09,2024-08,happy_purchase,знакомство,introduction,Дебетовая карта,оформление продукта,чат,positive,completed,4,False,False,False,0.0
+event_441438e60397,C025,2,event_8f387c590f91,2024-09-13,2024-09,happy_purchase,интерес к продукту,product_interest,Потребительский кредит,повышение лимита,чат,neutral,completed,5,False,False,True,1.0
+event_16c059d72069,C026,1,,2024-11-10,2024-11,short_support,знакомство,introduction,Инвестиционный счет,условия продукта,телефон,negative,completed,3,False,False,False,1.0
+event_ac67b3c3aba8,C026,2,event_16c059d72069,2024-12-22,2024-12,short_support,вопрос в поддержку,support_question,Инвестиционный счет,изменение персональных данных,телефон,positive,resolved,5,False,False,True,4.0
+event_2ab5f4b56b35,C026,3,event_ac67b3c3aba8,2025-01-06,2025-01,short_support,решение проблемы,problem_resolved,Ипотека,техническая ошибка,email,neutral,resolved,5,False,False,True,1.0
+event_1984bd2072f5,C027,1,,2025-01-18,2025-01,complaint_and_leave,использование продукта,usage,Страхование,изменение персональных данных,офис,neutral,completed,4,False,False,False,1.0
+event_40abdee785ad,C027,2,event_1984bd2072f5,2025-02-17,2025-02,complaint_and_leave,жалоба,complaint,Страхование,комиссия,мобильное приложение,negative,escalated,1,True,False,True,
+event_9c644e806eb3,C027,3,event_40abdee785ad,2025-03-31,2025-03,complaint_and_leave,уход клиента,churn,Страхование,комиссия,мобильное приложение,neutral,lost,1,False,False,True,
+event_4a2a3516b6b0,C028,1,,2024-11-10,2024-11,complaint_resolved_return,использование продукта,usage,Страхование,условия продукта,сайт,neutral,completed,4,False,False,False,0.0
+event_1b8c0b245bc3,C028,2,event_4a2a3516b6b0,2024-11-21,2024-11,complaint_resolved_return,жалоба,complaint,Накопительный счет,комиссия,телефон,negative,escalated,3,True,False,True,
+event_047691e49e5e,C028,3,event_1b8c0b245bc3,2024-12-25,2024-12,complaint_resolved_return,эскалация,escalation,Дебетовая карта,жалоба на обслуживание,телефон,negative,escalated,2,True,False,True,
+event_a8b7981d734a,C028,4,event_047691e49e5e,2025-01-21,2025-01,complaint_resolved_return,решение проблемы,problem_resolved,Кредитная карта,блокировка карты,телефон,neutral,resolved,5,False,False,True,1.0
+event_e346253f3775,C028,5,event_a8b7981d734a,2025-03-04,2025-03,complaint_resolved_return,удержание,retention,Накопительный счет,повышение лимита,телефон,positive,retained,5,False,False,True,1.0
+event_4c40be4187ce,C028,6,event_e346253f3775,2025-03-21,2025-03,complaint_resolved_return,повторная покупка,repeat_purchase,Страхование,условия продукта,телефон,neutral,completed,5,False,True,True,2.0
+event_fe68a434f384,C029,1,,2024-08-21,2024-08,complaint_and_leave,жалоба,complaint,Кредитная карта,просрочка платежа,мобильное приложение,neutral,in_progress,3,True,False,False,
+event_8c9b8b24a51c,C029,2,event_fe68a434f384,2024-09-28,2024-09,complaint_and_leave,уход клиента,churn,Инвестиционный счет,жалоба на обслуживание,мобильное приложение,negative,lost,2,False,False,True,
+event_f8b3d29dfbdd,C030,1,,2025-01-23,2025-01,loyal_multi_product,знакомство,introduction,Инвестиционный счет,условия продукта,телефон,neutral,completed,3,False,False,False,3.0
+event_732177d7e241,C030,2,event_f8b3d29dfbdd,2025-02-28,2025-02,loyal_multi_product,интерес к продукту,product_interest,Инвестиционный счет,повышение лимита,офис,neutral,completed,4,False,False,True,2.0
+event_72d3ee9df974,C030,3,event_732177d7e241,2025-03-30,2025-03,loyal_multi_product,покупка,purchase,Страхование,оформление продукта,офис,positive,completed,5,False,True,True,0.0
+event_154df8b52a04,C030,4,event_72d3ee9df974,2025-04-21,2025-04,loyal_multi_product,использование продукта,usage,Инвестиционный счет,условия продукта,офис,negative,completed,5,False,False,True,3.0
+event_914bc2b32205,C030,5,event_154df8b52a04,2025-05-18,2025-05,loyal_multi_product,повторная покупка,repeat_purchase,Накопительный счет,условия продукта,чат,positive,completed,4,False,True,True,1.0
+event_d4148e149005,C030,6,event_914bc2b32205,2025-06-25,2025-06,loyal_multi_product,использование продукта,usage,Ипотека,комиссия,офис,positive,completed,4,False,False,True,3.0
+event_709479fb7e8e,C030,7,event_d4148e149005,2025-08-08,2025-08,loyal_multi_product,вопрос в поддержку,support_question,Инвестиционный счет,техническая ошибка,офис,neutral,resolved,5,False,False,True,3.0
+event_63d733506b6a,C030,8,event_709479fb7e8e,2025-08-21,2025-08,loyal_multi_product,решение проблемы,problem_resolved,Страхование,блокировка карты,офис,neutral,resolved,5,False,False,True,1.0
+event_0cedd8d68f42,C031,1,,2024-12-24,2024-12,one_touch,знакомство,introduction,Потребительский кредит,оформление продукта,чат,positive,completed,4,False,False,False,3.0
+event_f1e9d659c730,C032,1,,2025-01-07,2025-01,complaint_resolved_return,использование продукта,usage,Ипотека,комиссия,офис,negative,completed,4,False,False,False,2.0
+event_bd8bcd07b57e,C032,2,event_f1e9d659c730,2025-01-23,2025-01,complaint_resolved_return,жалоба,complaint,Ипотека,блокировка карты,офис,positive,in_progress,1,True,False,True,
+event_5abb571c5117,C032,3,event_bd8bcd07b57e,2025-03-04,2025-03,complaint_resolved_return,эскалация,escalation,Ипотека,техническая ошибка,сайт,negative,escalated,2,True,False,True,
+event_b1f09822f639,C032,4,event_5abb571c5117,2025-03-30,2025-03,complaint_resolved_return,решение проблемы,problem_resolved,Ипотека,блокировка карты,email,positive,resolved,4,False,False,True,3.0
+event_57dd986b4882,C032,5,event_b1f09822f639,2025-05-02,2025-05,complaint_resolved_return,удержание,retention,Накопительный счет,повышение лимита,чат,neutral,retained,5,False,False,True,0.0
+event_1abb12a15b95,C033,1,,2024-10-07,2024-10,complaint_and_leave,жалоба,complaint,Накопительный счет,блокировка карты,сайт,negative,in_progress,3,True,False,False,
+event_7ba092af714b,C033,2,event_1abb12a15b95,2024-11-16,2024-11,complaint_and_leave,уход клиента,churn,Накопительный счет,закрытие продукта,сайт,negative,lost,1,False,False,True,
+event_7467e1f53e11,C034,1,,2024-09-18,2024-09,repeat_purchase,знакомство,introduction,Дебетовая карта,консультация по тарифам,телефон,positive,completed,5,False,False,False,1.0
+event_9123926b3608,C034,2,event_7467e1f53e11,2024-09-28,2024-09,repeat_purchase,интерес к продукту,product_interest,Инвестиционный счет,условия продукта,чат,neutral,completed,5,False,False,True,3.0
+event_e059a5856228,C034,3,event_9123926b3608,2024-10-25,2024-10,repeat_purchase,покупка,purchase,Потребительский кредит,условия продукта,офис,neutral,completed,5,False,True,True,2.0
+event_a19379081937,C034,4,event_e059a5856228,2024-12-01,2024-12,repeat_purchase,использование продукта,usage,Дебетовая карта,условия продукта,офис,neutral,completed,3,False,False,True,2.0
+event_992265af59e7,C034,5,event_a19379081937,2025-01-08,2025-01,repeat_purchase,консультация,consultation,Потребительский кредит,изменение персональных данных,офис,negative,completed,5,False,False,True,2.0
+event_ee4f49a3b398,C035,1,,2024-12-25,2024-12,long_lifecycle,знакомство,introduction,Ипотека,консультация по тарифам,мобильное приложение,neutral,completed,3,False,False,False,2.0
+event_0603c7fc1130,C035,2,event_ee4f49a3b398,2025-01-06,2025-01,long_lifecycle,интерес к продукту,product_interest,Ипотека,консультация по тарифам,сайт,positive,completed,4,False,False,True,1.0
+event_ffc587b1db9e,C035,3,event_0603c7fc1130,2025-02-17,2025-02,long_lifecycle,консультация,consultation,Кредитная карта,консультация по тарифам,телефон,neutral,completed,5,False,False,True,1.0
+event_a430da8b72be,C035,4,event_ffc587b1db9e,2025-03-29,2025-03,long_lifecycle,покупка,purchase,Кредитная карта,оформление продукта,email,positive,completed,5,False,True,True,1.0
+event_c99facc16dd8,C035,5,event_a430da8b72be,2025-04-11,2025-04,long_lifecycle,использование продукта,usage,Потребительский кредит,комиссия,email,negative,completed,3,False,False,True,3.0
+event_2eaeb68603d7,C035,6,event_c99facc16dd8,2025-05-18,2025-05,long_lifecycle,вопрос в поддержку,support_question,Ипотека,техническая ошибка,телефон,neutral,in_progress,3,False,False,True,
+event_348be7346fb7,C035,7,event_2eaeb68603d7,2025-06-28,2025-06,long_lifecycle,решение проблемы,problem_resolved,Потребительский кредит,техническая ошибка,телефон,positive,resolved,4,False,False,True,1.0
+event_10c25891fbda,C035,8,event_348be7346fb7,2025-07-16,2025-07,long_lifecycle,удержание,retention,Накопительный счет,консультация по тарифам,телефон,neutral,retained,3,False,False,True,2.0
+event_60c6aec57ebd,C035,9,event_10c25891fbda,2025-08-13,2025-08,long_lifecycle,повторная покупка,repeat_purchase,Страхование,оформление продукта,чат,negative,completed,5,False,True,True,0.0
+event_4f215353ec22,C035,10,event_60c6aec57ebd,2025-09-06,2025-09,long_lifecycle,использование продукта,usage,Потребительский кредит,условия продукта,телефон,positive,completed,4,False,False,True,2.0
+event_d86bbedebbde,C036,1,,2024-08-04,2024-08,loyal_multi_product,знакомство,introduction,Накопительный счет,консультация по тарифам,чат,neutral,completed,3,False,False,False,1.0
+event_f1d9a60c299d,C036,2,event_d86bbedebbde,2024-09-07,2024-09,loyal_multi_product,интерес к продукту,product_interest,Дебетовая карта,повышение лимита,телефон,neutral,completed,3,False,False,True,1.0
+event_f74ea6506987,C036,3,event_f1d9a60c299d,2024-09-29,2024-09,loyal_multi_product,покупка,purchase,Дебетовая карта,условия продукта,офис,positive,completed,5,False,True,True,1.0
+event_cfb60056cc33,C036,4,event_f74ea6506987,2024-11-12,2024-11,loyal_multi_product,использование продукта,usage,Потребительский кредит,условия продукта,сайт,neutral,completed,5,False,False,True,1.0
+event_1e24bd1e959c,C036,5,event_cfb60056cc33,2024-12-18,2024-12,loyal_multi_product,повторная покупка,repeat_purchase,Инвестиционный счет,повторная покупка,мобильное приложение,positive,completed,5,False,True,True,2.0
+event_f3417982ce56,C036,6,event_1e24bd1e959c,2025-01-17,2025-01,loyal_multi_product,использование продукта,usage,Накопительный счет,комиссия,телефон,neutral,completed,4,False,False,True,2.0
+event_4ca460af6928,C036,7,event_f3417982ce56,2025-02-27,2025-02,loyal_multi_product,вопрос в поддержку,support_question,Накопительный счет,блокировка карты,мобильное приложение,neutral,in_progress,5,False,False,True,
+event_169ee995e6d1,C036,8,event_4ca460af6928,2025-04-08,2025-04,loyal_multi_product,решение проблемы,problem_resolved,Потребительский кредит,возврат средств,сайт,positive,resolved,4,False,False,True,5.0
+event_9061bb01cff7,C037,1,,2024-09-12,2024-09,one_touch,знакомство,introduction,Страхование,условия продукта,мобильное приложение,neutral,completed,5,False,False,False,3.0
+event_a5240b8f5ec4,C038,1,,2024-08-15,2024-08,happy_purchase,знакомство,introduction,Инвестиционный счет,консультация по тарифам,email,neutral,completed,3,False,False,False,3.0
+event_83f1aaa4343d,C038,2,event_a5240b8f5ec4,2024-08-23,2024-08,happy_purchase,интерес к продукту,product_interest,Дебетовая карта,консультация по тарифам,телефон,positive,completed,3,False,False,True,0.0
+event_c49c7657cd4b,C038,3,event_83f1aaa4343d,2024-09-03,2024-09,happy_purchase,консультация,consultation,Дебетовая карта,консультация по тарифам,офис,negative,completed,4,False,False,True,0.0
+event_7d5785e0bf41,C038,4,event_c49c7657cd4b,2024-09-21,2024-09,happy_purchase,покупка,purchase,Потребительский кредит,условия продукта,телефон,positive,completed,5,False,True,True,1.0
+event_3bd032dadf3a,C038,5,event_7d5785e0bf41,2024-10-03,2024-10,happy_purchase,использование продукта,usage,Дебетовая карта,изменение персональных данных,чат,neutral,completed,3,False,False,True,1.0
+event_0675734700e1,C038,6,event_3bd032dadf3a,2024-11-12,2024-11,happy_purchase,вопрос в поддержку,support_question,Дебетовая карта,ошибка в приложении,чат,neutral,resolved,4,False,False,True,6.0
+event_c98eed443026,C038,7,event_0675734700e1,2024-12-23,2024-12,happy_purchase,решение проблемы,problem_resolved,Дебетовая карта,техническая ошибка,чат,positive,resolved,4,False,False,True,3.0
+event_1b62139f57e9,C039,1,,2024-08-09,2024-08,complaint_and_leave,знакомство,introduction,Ипотека,оформление продукта,мобильное приложение,neutral,completed,3,False,False,False,1.0
+event_b081149bf60d,C039,2,event_1b62139f57e9,2024-08-22,2024-08,complaint_and_leave,покупка,purchase,Накопительный счет,оформление продукта,мобильное приложение,positive,completed,4,False,True,True,0.0
+event_04b1ad977154,C039,3,event_b081149bf60d,2024-09-23,2024-09,complaint_and_leave,использование продукта,usage,Накопительный счет,комиссия,чат,neutral,completed,3,False,False,True,1.0
+event_7122f74f5916,C039,4,event_04b1ad977154,2024-10-14,2024-10,complaint_and_leave,жалоба,complaint,Накопительный счет,блокировка карты,мобильное приложение,negative,escalated,3,True,False,True,
+event_ad86c3b9249f,C039,5,event_7122f74f5916,2024-11-09,2024-11,complaint_and_leave,эскалация,escalation,Страхование,возврат средств,мобильное приложение,negative,escalated,2,True,False,True,
+event_68fa4b037b07,C039,6,event_ad86c3b9249f,2024-12-13,2024-12,complaint_and_leave,уход клиента,churn,Потребительский кредит,жалоба на обслуживание,чат,negative,lost,2,False,False,True,
+event_14b04203f743,C040,1,,2025-01-26,2025-01,one_touch,знакомство,introduction,Дебетовая карта,консультация по тарифам,офис,positive,completed,5,False,False,False,3.0
+event_62cf9e35e01b,C041,1,,2024-10-16,2024-10,complaint_resolved_return,использование продукта,usage,Кредитная карта,условия продукта,чат,neutral,completed,5,False,False,False,3.0
+event_b3954eeca9e2,C041,2,event_62cf9e35e01b,2024-11-16,2024-11,complaint_resolved_return,жалоба,complaint,Ипотека,ошибка в приложении,чат,negative,escalated,2,True,False,True,
+event_1315f43b9ad3,C041,3,event_b3954eeca9e2,2024-11-26,2024-11,complaint_resolved_return,эскалация,escalation,Ипотека,жалоба на обслуживание,чат,neutral,escalated,3,True,False,True,
+event_018ef199ad16,C041,4,event_1315f43b9ad3,2025-01-02,2025-01,complaint_resolved_return,решение проблемы,problem_resolved,Ипотека,блокировка карты,чат,negative,resolved,4,False,False,True,2.0
+event_54961ad78c04,C041,5,event_018ef199ad16,2025-02-08,2025-02,complaint_resolved_return,удержание,retention,Страхование,повышение лимита,чат,neutral,retained,4,False,False,True,1.0
+event_656353341612,C042,1,,2024-10-12,2024-10,repeat_purchase,знакомство,introduction,Ипотека,консультация по тарифам,чат,positive,completed,5,False,False,False,3.0
+event_8b3d4b34b894,C042,2,event_656353341612,2024-11-18,2024-11,repeat_purchase,интерес к продукту,product_interest,Потребительский кредит,условия продукта,чат,positive,completed,4,False,False,True,0.0
+event_fe07231b16b9,C042,3,event_8b3d4b34b894,2024-12-04,2024-12,repeat_purchase,покупка,purchase,Дебетовая карта,условия продукта,чат,positive,completed,5,False,True,True,1.0
+event_dc8caaca728d,C042,4,event_fe07231b16b9,2025-01-01,2025-01,repeat_purchase,использование продукта,usage,Ипотека,условия продукта,офис,neutral,completed,5,False,False,True,2.0
+event_668716fa5460,C042,5,event_dc8caaca728d,2025-02-08,2025-02,repeat_purchase,консультация,consultation,Страхование,условия продукта,чат,positive,completed,5,False,False,True,3.0
+event_2becb5ce4b6b,C042,6,event_668716fa5460,2025-03-20,2025-03,repeat_purchase,повторная покупка,repeat_purchase,Кредитная карта,повторная покупка,чат,neutral,completed,4,False,True,True,0.0
+event_fca8868fa5fe,C042,7,event_2becb5ce4b6b,2025-04-10,2025-04,repeat_purchase,использование продукта,usage,Ипотека,комиссия,мобильное приложение,positive,completed,4,False,False,True,2.0
+event_9ec728605a34,C043,1,,2025-01-16,2025-01,happy_purchase,знакомство,introduction,Дебетовая карта,оформление продукта,чат,neutral,completed,3,False,False,False,0.0
+event_05d3dff4256f,C043,2,event_9ec728605a34,2025-02-26,2025-02,happy_purchase,интерес к продукту,product_interest,Дебетовая карта,консультация по тарифам,email,neutral,completed,5,False,False,True,3.0
+event_cbcaed27118b,C043,3,event_05d3dff4256f,2025-03-11,2025-03,happy_purchase,консультация,consultation,Кредитная карта,консультация по тарифам,офис,neutral,completed,4,False,False,True,2.0
+event_0b7edc594afd,C043,4,event_cbcaed27118b,2025-03-23,2025-03,happy_purchase,покупка,purchase,Потребительский кредит,условия продукта,сайт,positive,completed,4,False,True,True,2.0
+event_5d87fb0d500f,C043,5,event_0b7edc594afd,2025-04-04,2025-04,happy_purchase,использование продукта,usage,Накопительный счет,комиссия,email,positive,completed,4,False,False,True,3.0
+event_912be879b778,C044,1,,2025-01-27,2025-01,one_touch,знакомство,introduction,Накопительный счет,консультация по тарифам,телефон,neutral,completed,4,False,False,False,0.0
+event_42fe7392948e,C045,1,,2024-09-28,2024-09,complaint_and_leave,знакомство,introduction,Дебетовая карта,консультация по тарифам,email,positive,completed,3,False,False,False,2.0
+event_bdbd248e7958,C045,2,event_42fe7392948e,2024-10-16,2024-10,complaint_and_leave,покупка,purchase,Ипотека,оформление продукта,email,negative,completed,4,False,True,True,2.0
+event_22c136c0ba19,C045,3,event_bdbd248e7958,2024-11-11,2024-11,complaint_and_leave,использование продукта,usage,Накопительный счет,изменение персональных данных,email,neutral,completed,4,False,False,True,2.0
+event_05228b6dd178,C045,4,event_22c136c0ba19,2024-11-23,2024-11,complaint_and_leave,жалоба,complaint,Дебетовая карта,жалоба на обслуживание,офис,neutral,escalated,1,True,False,True,
+event_290849618577,C045,5,event_05228b6dd178,2024-12-20,2024-12,complaint_and_leave,уход клиента,churn,Дебетовая карта,жалоба на обслуживание,чат,negative,lost,2,False,False,True,
+event_4c0c79e2b2bb,C046,1,,2024-11-19,2024-11,long_lifecycle,знакомство,introduction,Инвестиционный счет,условия продукта,телефон,neutral,completed,4,False,False,False,1.0
+event_7b20c3cf48ef,C046,2,event_4c0c79e2b2bb,2024-12-01,2024-12,long_lifecycle,интерес к продукту,product_interest,Инвестиционный счет,консультация по тарифам,офис,neutral,completed,3,False,False,True,3.0
+event_20d03315c9a3,C046,3,event_7b20c3cf48ef,2024-12-14,2024-12,long_lifecycle,консультация,consultation,Инвестиционный счет,условия продукта,телефон,positive,completed,4,False,False,True,0.0
+event_99c5681b4262,C046,4,event_20d03315c9a3,2025-01-01,2025-01,long_lifecycle,покупка,purchase,Ипотека,условия продукта,телефон,positive,completed,5,False,True,True,0.0
+event_e42e836c5490,C046,5,event_99c5681b4262,2025-01-30,2025-01,long_lifecycle,использование продукта,usage,Ипотека,условия продукта,телефон,positive,completed,4,False,False,True,3.0
+event_dbee8fc7655a,C046,6,event_e42e836c5490,2025-03-14,2025-03,long_lifecycle,вопрос в поддержку,support_question,Ипотека,блокировка карты,телефон,positive,resolved,4,False,False,True,2.0
+event_d1d2d046f009,C046,7,event_dbee8fc7655a,2025-04-17,2025-04,long_lifecycle,решение проблемы,problem_resolved,Ипотека,жалоба на обслуживание,сайт,neutral,resolved,5,False,False,True,3.0
+event_79f856de5d3a,C046,8,event_d1d2d046f009,2025-06-01,2025-06,long_lifecycle,удержание,retention,Ипотека,условия продукта,офис,positive,retained,3,False,False,True,3.0
+event_0199e3955865,C046,9,event_79f856de5d3a,2025-06-29,2025-06,long_lifecycle,повторная покупка,repeat_purchase,Страхование,оформление продукта,телефон,positive,completed,4,False,True,True,1.0
+event_40ec4ea8ce5f,C047,1,,2024-12-01,2024-12,complaint_and_leave,знакомство,introduction,Потребительский кредит,консультация по тарифам,сайт,positive,completed,5,False,False,False,3.0
+event_abe212840fef,C047,2,event_40ec4ea8ce5f,2024-12-28,2024-12,complaint_and_leave,покупка,purchase,Инвестиционный счет,условия продукта,сайт,neutral,completed,5,False,True,True,1.0
+event_0be825338bf1,C047,3,event_abe212840fef,2025-02-10,2025-02,complaint_and_leave,использование продукта,usage,Кредитная карта,изменение персональных данных,сайт,neutral,completed,3,False,False,True,3.0
+event_817cdf84ce45,C047,4,event_0be825338bf1,2025-03-17,2025-03,complaint_and_leave,жалоба,complaint,Потребительский кредит,возврат средств,сайт,negative,escalated,1,True,False,True,
+event_6e5bef8925ac,C047,5,event_817cdf84ce45,2025-04-02,2025-04,complaint_and_leave,уход клиента,churn,Инвестиционный счет,закрытие продукта,чат,negative,lost,2,False,False,True,
+event_01c86a80c366,C048,1,,2024-12-15,2024-12,happy_purchase,знакомство,introduction,Накопительный счет,оформление продукта,офис,positive,completed,3,False,False,False,2.0
+event_dd28fbb40f25,C048,2,event_01c86a80c366,2024-12-28,2024-12,happy_purchase,интерес к продукту,product_interest,Страхование,консультация по тарифам,чат,positive,completed,5,False,False,True,0.0
+event_fb84c9525fb2,C048,3,event_dd28fbb40f25,2025-01-25,2025-01,happy_purchase,консультация,consultation,Ипотека,консультация по тарифам,офис,positive,completed,4,False,False,True,1.0
+event_89f58a9c303d,C048,4,event_fb84c9525fb2,2025-03-01,2025-03,happy_purchase,покупка,purchase,Потребительский кредит,условия продукта,мобильное приложение,positive,completed,4,False,True,True,1.0
+event_e48895189837,C048,5,event_89f58a9c303d,2025-03-14,2025-03,happy_purchase,использование продукта,usage,Инвестиционный счет,комиссия,офис,neutral,completed,5,False,False,True,1.0
+event_c7b56b517d9e,C048,6,event_e48895189837,2025-04-11,2025-04,happy_purchase,вопрос в поддержку,support_question,Инвестиционный счет,изменение персональных данных,телефон,neutral,resolved,3,False,False,True,6.0
+event_67d6eb7a52e3,C048,7,event_c7b56b517d9e,2025-04-22,2025-04,happy_purchase,решение проблемы,problem_resolved,Инвестиционный счет,возврат средств,офис,neutral,resolved,4,False,False,True,2.0
+event_3cf2d02c98b0,C049,1,,2024-12-11,2024-12,complaint_and_leave,знакомство,introduction,Инвестиционный счет,консультация по тарифам,сайт,neutral,completed,4,False,False,False,1.0
+event_942d32ad8213,C049,2,event_3cf2d02c98b0,2024-12-29,2024-12,complaint_and_leave,покупка,purchase,Накопительный счет,условия продукта,чат,positive,completed,4,False,True,True,1.0
+event_30f7917b9982,C049,3,event_942d32ad8213,2025-01-29,2025-01,complaint_and_leave,использование продукта,usage,Инвестиционный счет,комиссия,сайт,positive,completed,5,False,False,True,0.0
+event_efdf237f32d4,C049,4,event_30f7917b9982,2025-03-11,2025-03,complaint_and_leave,жалоба,complaint,Накопительный счет,комиссия,телефон,negative,escalated,2,True,False,True,
+event_aad82a6c7be5,C049,5,event_efdf237f32d4,2025-04-25,2025-04,complaint_and_leave,эскалация,escalation,Накопительный счет,жалоба на обслуживание,сайт,negative,escalated,2,True,False,True,
+event_3eaffd63f9b3,C049,6,event_aad82a6c7be5,2025-05-21,2025-05,complaint_and_leave,уход клиента,churn,Инвестиционный счет,закрытие продукта,сайт,negative,lost,2,False,False,True,
+event_24b00571fa17,C050,1,,2024-10-18,2024-10,one_touch,знакомство,introduction,Ипотека,оформление продукта,email,positive,completed,4,False,False,False,3.0
